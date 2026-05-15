@@ -61,6 +61,10 @@ function Book(author, title, pages, read = false, img){
 }
 
 function addBookToLibrary(){
+    if(authorInput.value === "" || titleInput.value === "" || pagesInput.value === ""){
+        alert("Please fill the form!");
+        return;
+    }
     myLibrary.unshift(new Book(
         authorInput.value,
         titleInput.value,
@@ -68,7 +72,11 @@ function addBookToLibrary(){
         readInput.checked,
         imgInput.value
     ))
-    console.log(myLibrary)
+    authorInput.value = "";
+    titleInput.value = "";
+    pagesInput.value = "";
+    imgInput.value = "";
+    readInput.value = "";
 }
 
 function createBooks(library){
