@@ -6,8 +6,11 @@ body{
     background-image: url("https://static.vecteezy.com/system/resources/previews/027/748/857/large_2x/old-wood-texture-background-floor-surface-rustic-wooden-background-photo.jpg");
     color: white;
     border: 1px solid white;
+    @media screen and (max-width: 375px) {
+            width: 375px;
+        };
     @media screen and (max-width: 768px){
-        width: 770px;        
+        width: 768px;        
     }
 }
 
