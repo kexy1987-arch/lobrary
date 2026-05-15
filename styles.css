@@ -29,16 +29,19 @@ button{
     text-shadow: 5px 5px 15px rgb(240, 177, 119), 5px 5px 15px rgb(240, 177, 119);
     box-shadow: 5px 5px 15px rgb(255, 255, 255);
 }
-
-#add-btn{
+#fixed{
     position: fixed;
     top: 20px;
     left: -30px;
+    z-index: 99999;
+}
+
+#add-btn{
+    height: fit-content;
     padding-left: 50px;
     text-shadow: 5px 5px 15px rgb(255, 255, 255), 5px 5px 15px rgb(255, 255, 255);
     box-shadow: 5px 5px 15px rgb(255, 255, 255);
     transition: transform 0.3s ease;
-    z-index: 99999;
 }
 
 button:hover{
@@ -51,7 +54,7 @@ button:hover{
     position: fixed;
     top: 0;
     left: -400px;
-    z-index:1;
+    z-index:11;
     background-color: rgba(0, 0, 0, 0.774);
     border-bottom-right-radius: 30px;
     box-shadow: 2px 2px 5px white;
