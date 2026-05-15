@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main>
+        <button type="button" id="add-btn">New Book</button>
+        <aside id="form-container">
+            <form>
+                <legend>Add new book</legend>
+                <label for="author-input">Author:<input id="author-input" type="text" placeholder="ex. J.K. Rowling"></label>                
+                <label for="title-input">Title:<input id="title-input" type="text" placeholder="Harry Potter And The Philosoper's Stone"></label>                
+                <label for="pages-input">Pages:<input id="pages-input" type="number" placeholder="224"></label>                
+                <label for="read-input">Read:<input id="read-input" type="checkbox"></label> 
+                <label for="img-input">Image link:<input id="img-input" type="text"></label>               
+                <button type="submit">Add Book</button>
+            </form>
+        </aside>
+        <section>
+            <h1 class="shadow">Book Library</h1>            
+            <div>
+                <label id="filter">Filter by:
+                    <select id="book-select">
+                        <option selected></option>
+                        <option>Title</option>
+                        <option>Author</option>
+                        <option>Page</option>
+                        <option>Read</option>
+                        <option>Not Read</option>
+                </select>
+                </label>
+                <div id="books-container">
+                    
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

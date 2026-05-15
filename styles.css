@@ -1,0 +1,185 @@
+*{
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-image: url("https://static.vecteezy.com/system/resources/previews/027/748/857/large_2x/old-wood-texture-background-floor-surface-rustic-wooden-background-photo.jpg");
+    color: white;
+}
+
+main{
+    margin: 0px auto;
+    display: flex;
+}
+
+button{
+    background-color: rgba(0, 0, 0, 0.377);
+    border: 2px solid white;
+    border-radius: 30px;
+    color: white;
+    font-size: 1.3rem;
+    padding: 1rem;
+    width: fit-content;
+}
+
+.shadow{
+    text-shadow: 5px 5px 15px rgb(255, 255, 255), 5px 5px 15px rgb(255, 255, 255);
+        box-shadow: 5px 5px 15px rgb(255, 255, 255);
+}
+
+#add-btn{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    text-shadow: 5px 5px 15px rgb(255, 255, 255), 5px 5px 15px rgb(255, 255, 255);
+    box-shadow: 5px 5px 15px rgb(255, 255, 255);
+    transition: transform 0.3s ease;
+    z-index: 99999;
+}
+
+button:hover{
+    text-shadow: 5px 5px 15px rgb(255, 145, 0), 5px 5px 15px rgb(255, 255, 255);
+    box-shadow: 5px 5px 15px rgb(255, 145, 0);
+    transform: scale(1.2);
+}
+
+#form-container{
+    position:absolute;
+    top: 0;
+    left: -400px;
+    z-index:1;
+    background: linear-gradient(to left, white 0%,rgba(0, 0, 0, 0.822) 2%, rgba(0, 0, 0, 0.822) 100%);
+    height: 100vh;
+    padding: 150px 30px;
+    opacity: 1;
+    transition: transform 0.4s ease;
+}
+
+.show {
+    transform: translateX(400px);
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+legend{
+    text-decoration: underline;
+    font-size: 1.3rem;
+}
+
+form > label{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    font-size: 1.1rem;
+}
+
+input{
+    border: 2px solid white;
+    background-color: rgba(240, 248, 255, 0);
+    border-radius: 25px;
+    color: whitesmoke;
+    padding: 0 1rem;
+}
+
+section{
+    width: 100%;
+}
+
+h1{
+    text-align: center;
+    border-radius: 15px;
+    background-color:rgba(0, 0, 0, 0.377);
+    width: fit-content;
+    padding: 10px;
+    margin: 13px auto 50px;
+}
+
+section > div{
+    background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.089) 0%, rgba(255, 255, 255, 0.089) 15%, rgba(0, 193, 252, 0.174) 20%, rgba(255, 255, 255, 0.089) 40%, rgba(0, 193, 252, 0.174) 60%, rgba(255, 255, 255, 0.089) 100%);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+div > label{
+    position: sticky;
+    top: 0;
+}
+
+.card{
+    background-color: rgba(0, 0, 0, 0.651);
+    border: 2px solid white;
+    border-radius: 15px;
+    padding: 10px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+.card:hover{
+    transform: scale(1.6);
+}
+
+ p > span{
+    margin: 20px;
+}
+
+.card-img{
+    width: 150px;
+    aspect-ratio: 1 / 1;
+    border: 2px solid white;
+    border-radius: 12px;
+}
+
+.read-btn{
+    font-size: 1rem;
+    padding: 8px;
+    margin: 10px auto;
+    width: 90px;
+    transition: transform 0.3s ease;
+}
+
+.delete-btn {
+    font-size: 1rem;
+    padding: 8px;
+    margin: 10px auto;
+    width: 90px;
+    transition: transform 0.3s ease;
+}
+
+.delete-btn:hover{
+    text-shadow: 5px 5px 15px rgb(255, 0, 0), 5px 5px 15px rgb(255, 255, 255);
+    box-shadow: 5px 5px 15px rgb(255, 0, 0);
+}
+
+#books-container{
+    margin: 30px auto;
+    min-width: 620px;
+    width: 80%;
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 200px));
+    justify-content: space-evenly;
+}
+
+h2{
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+#filter{
+    margin-left: 15%;
+}
+
+select{
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 0.6rem;
+}
